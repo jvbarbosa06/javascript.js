@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monkey D. Luffy</title>
+</head>
+<body>
+   
+    <script>
+        document.write("<h2>"+document.title+"</h2>");
+    </script>
+    <p id="paragrafo">Olá</p>
+    <script>
+        function mFuncao() {
+             var x = document.getElementById("paragrafo");
+             x.innerHTML="Hello!";
+        }
+       </script>
+
+       <script>
+            function trocaImagem() {
+                var elemento=document.getElementById(myimage);
+                if (elemento.src.match("button")) {
+                    elemento.src="pic_bulboff.gif";
+                } else {
+                    elemento.src="pic_bulboff.gif"; 
+                }
+            }
+       </script>
+       <p> <img id="myimage" onclick="trocaImagem()"
+           src="pic_bulboff.gif" width="100" height="180">
+
+      </p>
+
+       <button type="button" onclick="mFuncao();"> Translate</button>
+    <button type="button" onclick="alert('AAA minha chinela vai cantar...')">Clique aqui</button>
+</body>
+</html>
